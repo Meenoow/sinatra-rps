@@ -7,8 +7,10 @@ get("/") do
 end
 
 get("/rock") do
-  array = ["Rock", "Paper", "Scissors"]
+  array = ["rock", "raper", "scissors"]
   @roll = array.sample()
+
+  if
 
   @outcome = "#{@roll}"
 
