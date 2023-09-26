@@ -7,10 +7,8 @@ get("/") do
 end
 
 get("/rock") do
-  array = ["rock", "raper", "scissors"]
+  array = ["rock", "paper", "scissors"]
   @roll = array.sample()
-
-  if
 
   @outcome = "#{@roll}"
 
@@ -18,11 +16,19 @@ get("/rock") do
 end  
 
 get("/paper") do
+  array = ["rock", "paper", "scissors"]
+  @roll = array.sample()
+
+  @outcome = "#{@roll}"
   
  erb(:paper)
 end
 
 get("/scissors") do
+  array = ["rock", "paper", "scissors"]
+  @roll = array.sample()
+
+  @outcome = "#{@roll}"
   
   erb(:scissors)
  end

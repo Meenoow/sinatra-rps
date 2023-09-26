@@ -9,6 +9,15 @@
   <h2>We played rock!</h2>
 
   <h2>They played <%= @outcome %></h2>
+
+  <% if @roll == "rock" %>
+    <h2>We tied!</h2>
+  <% elsif @roll == "paper" %>
+    <h2>We lost!</h2>
+  <% else @roll == "scissors" %>
+    <h2>We won!</h2>
+  <% end %>  
+
   <div><a href="/">Rules</a></div>
 </body>
 </html>

@@ -6,7 +6,17 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello paper</h1>
+  <h2>We played paper!</h2>
+
+  <h2>They played <%= @outcome %></h2>
+
+  <% if @roll == "paper" %>
+    <h2>We tied!</h2>
+  <% elsif @roll == "scissors" %>
+    <h2>We lost!</h2>
+  <% else @roll == "rock" %>
+    <h2>We won!</h2>
+  <% end %>  
   <div><a href="/">Rules</a></div>
 </body>
 </html>
